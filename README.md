@@ -70,7 +70,7 @@ When you run the client for the first time it will ask automatically for all the
 | token                 | string  |         | The access token for the API (sent by server on registration)              |
 | uuid                  | string  |         | Unique identifier of the agent (generated on registration)                 |
 | debug                 | boolean | false   | Enables debug output                                                       |
-| allow-piping          | boolean | true    | Allows hashcat to read password candidates from stdin                      |
+| allow-piping          | boolean | false   | Allows hashcat to read password candidates from stdin                      |
 | piping-threshold      | integer | 95      | Restarts chunk in piping mode when GPU UTIL is below this value            |
 | rsync                 | boolean | false   | Enables download of wordlists and rules via rsync                          |
 | rsync-path            | string  |         | Remote path to hashtopolis files directory                                 |
@@ -110,6 +110,8 @@ In order to use the multicast distribution for files, please make sure that the 
 
 The list contains all Hashcat versions with which the client was tested and is able to work with (other versions might work):
 
+* 6.0.0
+* 5.1.0
 * 5.0.0
 * 4.2.1
 * 4.2.0
